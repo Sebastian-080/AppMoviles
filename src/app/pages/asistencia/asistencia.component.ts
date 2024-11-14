@@ -9,14 +9,14 @@ import { User } from '../../models/user.model';
 import { asistencia } from '../../models/asistencia.model';
 
 @Component({
-  selector: 'app-quiz',
+  selector: 'app-asistencia',
   standalone: true,
   imports: [IonicModule, ReactiveFormsModule, CommonModule],
   providers: [ApiService],
-  templateUrl: './quiz.component.html',
-  styleUrls: ['./quiz.component.scss'],
+  templateUrl: './asistencia.component.html',
+  styleUrls: ['./asistencia.component.scss'],
 })
-export class QuizComponent implements OnInit {
+export class AsistenciaComponent implements OnInit {
   frmAsistencia: FormGroup;
   eventoList: Evento[] = []; 
   userList: User[] = []; 
