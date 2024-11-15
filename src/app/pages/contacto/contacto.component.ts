@@ -29,7 +29,7 @@ export class ContactoComponent  implements OnInit {
   login(){
     console.log(this.frmContacto.value);
 
-    if (!this.frmContacto.invalid) {
+    if (this.frmContacto.invalid) {
       alert("Datos Incompletos.")
       return;
     }
