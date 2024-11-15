@@ -31,6 +31,7 @@ export class ContactoComponent  implements OnInit {
 
     if (!this.frmContacto.invalid) {
       alert("Datos Incompletos.")
+      return;
     }
 
     // Aquí estamos asegurando que estamos usando ApiResponse<User>
