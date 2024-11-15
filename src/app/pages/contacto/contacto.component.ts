@@ -38,13 +38,13 @@ export class ContactoComponent  implements OnInit {
       next: (response) => {
         // Aquí la respuesta es del tipo ApiResponse<User>
         console.log(response);
+        this.frmContacto.reset();
+        alert("Pronto Contactaremos Con Usted.");
       },
       error: err => {
         console.error(err);
       }
     });
-    this.frmContacto.reset();
-    alert("Pronto Contactaremos Con Usted.")
   }
 
 }
